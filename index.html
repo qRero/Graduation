@@ -19,11 +19,19 @@
             padding: 20px;
         }
 
+        .logo-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
         .logo {
             width: 400px;
             height: auto;
-            margin-bottom: 2rem;
             max-width: 90%;
+            display: block;
         }
 
         .container {
@@ -46,6 +54,8 @@
             display: flex;
             gap: 2rem;
             margin-top: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
         }
 
         .countdown-item {
@@ -80,7 +90,6 @@
 
         @media (max-width: 600px) {
             .countdown {
-                flex-wrap: wrap;
                 gap: 1rem;
             }
 
@@ -91,11 +100,17 @@
             .countdown-item {
                 min-width: 80px;
             }
+
+            .logo {
+                width: 300px;
+            }
         }
     </style>
 </head>
 <body>
-    <img src="smp-logo.png" alt="Saudi Mining Polytechnic Logo" class="logo">
+    <div class="logo-container">
+        <img src="./smp-logo.png" alt="Saudi Mining Polytechnic Logo" class="logo">
+    </div>
     <div class="container">
         <h1>Time Until Graduation! 🎓</h1>
         <div class="countdown">
